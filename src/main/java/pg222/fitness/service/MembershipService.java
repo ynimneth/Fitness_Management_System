@@ -79,7 +79,7 @@ public class MembershipService {
             String[] parts = line.split(",");
             LocalDate expiryDate = LocalDate.parse(parts[2]);
             if (expiryDate.isBefore(currentDate)) {
-                parts[1] = "expired"; // Assuming the status is stored in parts[1]
+                parts[1] = "expired";
             }
             else {
                 parts[1] = "active";

@@ -16,35 +16,44 @@ public class Membership {
     }
 
     public String getUsername() {
+
         return username;
     }
 
     public String getStatus() {
+
         return status;
     }
 
     public void setStatus(String status) {
+
         this.status = status;
     }
 
+
     public String getExpiryDate() {
+
         return expiryDate;
     }
 
     public void setExpiryDate(String expiryDate) {
+
         this.expiryDate = expiryDate;
     }
 
     public int getTierId() {
+
         return tierId;
     }
 
     public void setTierId(int tierId) {
+
         this.tierId = tierId;
     }
 
     @Override
     public String toString() {
+
         return username + "," + status + "," + expiryDate + "," + tierId;
     }
 
@@ -61,6 +70,7 @@ public class Membership {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(username, status, expiryDate, tierId);
     }
 }
